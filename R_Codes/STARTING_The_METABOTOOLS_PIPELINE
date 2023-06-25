@@ -1,2 +1,112 @@
-# We divided the analysis to two parts: A) Metabolites analysis and B) Microbiome analysis 
+# The published data had two datasets for the metabolome and microbiome data (PRISM: 155 samples and validation cohort: 65 samples)
+# As a start, we focused our analysis on the metabolites part of the PRISM samples 
+
+--------------- STARTING A METABOTOOLS PIPELINE ---------------
+
+A) Installing and loading the necessary packages 
+
+rm(list=ls())
+#devtools::install_github(repo="krumsieklab/maplet@v1.1.2", subdir="maplet")
+#'force= TRUE'
+#install.packages("matrixStats")
+#install.packages("MatrixGenerics")
+#install.packages("SummarizedExperiment")
+#install.packages("magrittr")
+#install.packages("DT")
+library (usethis)
+library (devtools)
+library(matrixStats)
+library (MatrixGenerics)
+library(SummarizedExperiment)
+library(maplet)
+library(tidyverse)
+library(magrittr)
+library(DT)
+purrr::zap()
+file_data_metabolome <- system.file("extdata", "example_data/Metabolome_data.xlsx", package = "maplet")
+print (file_data_metabolome)
+
+B) Starting the pipeline by loading the data and the annotations: 
+
+D <-
+  
+  mt_load_xls(file=file_data_metabolome, sheet="Metabolite_abundance_PRISM", samples_in_row=F, id_col="# Feature / Sample_PRISM") %>%
+  # load metabolite (rowData) annotations
+  mt_anno_xls(file=file_data_metabolome, sheet="Metabolite_features",anno_type="features", anno_id_col="Metabolomic Feature", data_id_col ="name") %>%
+  # load clinical (colData) annotations
+  mt_anno_xls(file=file_data_metabolome, sheet="Metabolome_metadata_PRISM", anno_type="samples", anno_id_col ="Sample_PRISM", data_id_col ="sample") %>%
+  # # log assay dimensions and number of columns for both metabolite and clincial annotations
+  mt_reporting_data() %>%
+  # start timing
+  mt_reporting_tic() %>%
+  {.}
+
+  # We used R to format the rowData name to ensure that each metabolites has an assigned name:
+
+  ix=which(!is.na(rowData(D)$Putative.Chemical.Class))
+  rowData(D)$name[ix]=paste("class",rowData(D)$Putative.Chemical.Class[ix],sep=":")
+  ix2=which(!is.na(rowData(D)$Exact.Match.to.Standard......isomer.family.))
+  rowData(D)$name[ix2]=rowData(D)$Exact.Match.to.Standard......isomer.family.[ix2]
+  ix2=which(duplicated(rowData(D)$name))
+  rowData(D)$name[ix2]=paste(rowData(D)$name[ix2],seq(length(ix2)),sep=".")
+  names(rowData(D))
+  rowData(D)$name
+  ix3=which(!is.na(rowData(D)$Putative.Chemical.Class))
+  D=D[ix3,]
+  rowData(D)$name=make.names(rowData(D)$name)
+  rownames(D)=rowData(D)$name
+
+C) PREPROCESSING: MISSINGNESS ANALYSIS
+
+D1 <- D %>%
+  mt_pre_zero_to_na() %>%
+  mt_reporting_heading(heading = "Missingness analysis", lvl = 1) %>%
+  # section text
+  mt_reporting_text(text = "Perform missingness analysis to determine if NAs significantly accumulate in one of the treatment
+                    groups. Adjust output of test using multiple testing correction.") %>%
+  # compute Fisher's exact test
+  mt_stats_univ_missingness(in_col="Diagnosis", stat_name="missingness") %>%
+  # create p-value qq plot
+  mt_plots_pval_qq(stat_name = "missingness") %>%
+  # apply multiple testing correction
+  mt_post_multtest(stat_name="missingness", method="BH") %>%
+  {.}
+
+C) PREPROCESSING: NORMALIZATION
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Normalization", lvl = 2) %>%
+  # section text
+  mt_reporting_text(text = "Plot sample boxplots before normalization, perform quotient normalization, plot boxplot with dilution factors from quotient normalization, plot sample boxplot after
+                    normalization, log transform the data, impute missing data using min value, plot sample boxplot after imputation,
+                    detect outliers, log dataset info, write pre-processed data to file.") %>%
+  mt_plots_sample_boxplot(color=Diagnosis, title = "Original", plot_logged = T) %>%
+  mt_pre_norm_quot(feat_max = 0.2, ref_samples = Diagnosis=="Control") %>%
+  mt_plots_dilution_factor(in_col="Diagnosis") %>%
+  # plot sample boxplots after normalization
+  mt_plots_sample_boxplot(color=Diagnosis, title = "After normalization", plot_logged = T) %>%
+  # log transform
+  mt_pre_trans_log() %>%
+  # impute missing values using min
+  mt_pre_impute_min() %>%
+  # plot sample boxplot after imputation
+  mt_plots_sample_boxplot(color=Diagnosis, title = "After imputation", plot_logged = T) %>%
+  mt_pre_outlier_detection_univariate() %>%
+  mt_reporting_data() %>%
+  {.}
+
+C) PREPROCESSING: FILTERING MISSING VALUES
+
+D1 <- D1 %>%
+  mt_modify_filter_samples(filter = !is.na(Diagnosis)) %>%
+  mt_anno_apply(anno_type = "samples", col_name = "Diagnosis", fun = as.factor) %>%
+  mt_plots_missingness(feat_max=0.5) %>%
+  mt_pre_filter_missingness(feat_max = 0.5) %>%
+  mt_plots_missingness(feat_max=0.5) %>%
+  {.}
+
+--------------- After running the codes : 3829 elements were in the large summarized experiments ---------------
+
+
 
