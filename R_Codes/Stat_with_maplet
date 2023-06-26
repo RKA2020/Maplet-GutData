@@ -14,7 +14,7 @@ D1 <- D1 %>%
 D1 <- D1 %>% mt_reporting_html(file = "PCA.html", title = "IBD - PCA")
 
 
---------------- LINEAR REGRESSION of the six phenotypes ---------------
+--------------- LINEAR REGRESSION of the seven phenotypes ---------------
 
 
 # E) STATISTICAL ANALYSIS, OUTCOME: Diagnosis, METHOD: LINEAR REGRESSION (t-test) 
@@ -237,4 +237,6 @@ D1 <- D1 %>%
   {.}
 
 
---------------- After running the codes : An excel sheet will be generated ---------------
+--------------- After running the codes : An excel sheet will be generated (the file will contain the LR results for the seven phenotypes such as: stastics, p-value, p-adj, meansq, sumsq) ---------------
+--------------- The same excel sheet will also have the missigness report ---------------
+--------------- To view the excel sheet : Kindly see results folder --------------
