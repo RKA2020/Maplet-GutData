@@ -1,0 +1,240 @@
+# Here, we will show the "Maplet" codes we used to perform specific quality and statistical tests using the same summarized experiments (D1) from the starting the metabotools file
+
+# D) GLOBAL STATISTICS : PCA
+
+assay(D1)[ which(is.na(assay(D1)), arr.ind = TRUE) ] = 0
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Global Statistics", lvl = 1) %>%
+  
+  # plot PCA 
+  mt_plots_pca(scale_data = T, title = "Scaled PCA - Diagnosis", color= Diagnosis, exp_var_plot=T, size=2.5, ggadd= theme(panel.background = element_rect(fill = "white", colour = "grey50"))) %>%
+  
+  {.}
+
+D1 <- D1 %>% mt_reporting_html(file = "PCA.html",
+                                               title = "IBD - PCA")
+
+
+
+# E) STATISTICAL ANALYSIS, OUTCOME: Diagnosis, METHOD: LINEAR REGRESSION (t-test) 
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Diagnosis analysis", lvl = 2) %>%
+  # linear model for binary function (equivalent to t-test)
+  mt_stats_univ_lm(formula = ~ Diagnosis,
+                   stat_name = "Diagnosis met") %>%
+  # add multiple testing correction
+  mt_post_multtest(stat_name = "Diagnosis met", method = "BH") %>%
+  # add stats logging
+  mt_reporting_stats(stat_name = "Diagnosis met", stat_filter = p.adj < 0.05) %>%
+  # write statistical results to file
+  mt_write_stats(file = "Diagnosis analysis.xlsx") %>%
+  # pvalue histogram
+  mt_plots_pval_hist(stat_list = "Diagnosis met") %>%
+  # volcano plot as overview of results
+  mt_plots_volcano(stat_name = "Diagnosis met",
+                   x = statistic,
+                   feat_filter = p.adj < 0.05,
+                   colour       = p.adj < 0.05) %>%
+  # boxplot
+  mt_plots_box_scatter(stat_name          ="Diagnosis met",
+                       x                  = Diagnosis,
+                       fill               = Diagnosis,
+                       plot_type          = "box",
+                       feat_filter       = p.adj < 0.05,
+                       feat_sort         = p.value,
+                       annotation         = "{sprintf('P-value: %.2e', p.value)}\nPadj: {sprintf('%.2e', p.adj)}") %>%
+  {.}
+
+
+
+# E) STATISTICAL ANALYSIS, OUTCOME: AGE, METHOD: LINEAR REGRESSION (t-test) 
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Age analysis", lvl = 2) %>%
+  # linear model for binary function (equivalent to t-test)
+  mt_stats_univ_lm(formula = ~ Age,
+                   stat_name = "Age met") %>%
+  # add multiple testing correction
+  mt_post_multtest(stat_name = "Age met", method = "BH") %>%
+  # add stats logging
+  mt_reporting_stats(stat_name = "Age met", stat_filter = p.adj < 0.05) %>%
+  # write statistical results to file
+  mt_write_stats(file = "Age analysis.xlsx") %>%
+  # pvalue histogram
+  mt_plots_pval_hist(stat_list = "Age met") %>%
+  # volcano plot as overview of results
+  mt_plots_volcano(stat_name = "Age met",
+                   x = statistic,
+                   feat_filter = p.adj < 0.05,
+                   colour       = p.adj < 0.05) %>%
+  # boxplot
+  mt_plots_box_scatter(stat_name          ="Age met",
+                       x                  = Age,
+                       fill               = Age,
+                       plot_type          = "box",
+                       feat_filter       = p.adj < 0.05,
+                       feat_sort         = p.value,
+                       annotation         = "{sprintf('P-value: %.2e', p.value)}\nPadj: {sprintf('%.2e', p.adj)}") %>%
+  {.}
+
+# E) STATISTICAL ANALYSIS, OUTCOME: Fecal.Calprotectin, METHOD: LINEAR REGRESSION (t-test) 
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Fecal.Calprotectin analysis", lvl = 2) %>%
+  # linear model for binary function (equivalent to t-test)
+  mt_stats_univ_lm(formula = ~ Fecal.Calprotectin,
+                   stat_name = "Fecal.Calprotectin met") %>%
+  # add multiple testing correction
+  mt_post_multtest(stat_name = "Fecal.Calprotectin met", method = "BH") %>%
+  # add stats logging
+  mt_reporting_stats(stat_name = "Fecal.Calprotectin met", stat_filter = p.adj < 0.05) %>%
+  # write statistical results to file
+  mt_write_stats(file = "Fecal.Calprotectin analysis.xlsx") %>%
+  # pvalue histogram
+  mt_plots_pval_hist(stat_list = "Fecal.Calprotectin met") %>%
+  # volcano plot as overview of results
+  mt_plots_volcano(stat_name = "Fecal.Calprotectin met",
+                   x = statistic,
+                   feat_filter = p.adj < 0.05,
+                   colour       = p.adj < 0.05) %>%
+  # boxplot
+  mt_plots_box_scatter(stat_name          ="Fecal.Calprotectin met",
+                       x                  = Fecal.Calprotectin,
+                       fill               = Fecal.Calprotectin,
+                       plot_type          = "box",
+                       feat_filter       = p.adj < 0.05,
+                       feat_sort         = p.value,
+                       annotation         = "{sprintf('P-value: %.2e', p.value)}\nPadj: {sprintf('%.2e', p.adj)}") %>%
+  {.}
+
+# E) STATISTICAL ANALYSIS, OUTCOME: Antibiotic, METHOD: LINEAR REGRESSION (t-test) 
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Antibiotic analysis", lvl = 2) %>%
+  # linear model for binary function (equivalent to t-test)
+  mt_stats_univ_lm(formula = ~ Antibiotic,
+                   stat_name = "Antibiotic met") %>%
+  # add multiple testing correction
+  mt_post_multtest(stat_name = "Antibiotic met", method = "BH") %>%
+  # add stats logging
+  mt_reporting_stats(stat_name = "Antibiotic met", stat_filter = p.adj < 0.05) %>%
+  # write statistical results to file
+  mt_write_stats(file = "Antibiotic analysis.xlsx") %>%
+  # pvalue histogram
+  mt_plots_pval_hist(stat_list = "Antibiotic met") %>%
+  # volcano plot as overview of results
+  mt_plots_volcano(stat_name = "Antibiotic met",
+                   x = statistic,
+                   feat_filter = p.adj < 0.05,
+                   colour       = p.adj < 0.05) %>%
+  # boxplot
+  mt_plots_box_scatter(stat_name          ="Antibiotic met",
+                       x                  = Antibiotic,
+                       fill               = Antibiotic,
+                       plot_type          = "box",
+                       feat_filter       = p.adj < 0.05,
+                       feat_sort         = p.value,
+                       annotation         = "{sprintf('P-value: %.2e', p.value)}\nPadj: {sprintf('%.2e', p.adj)}") %>%
+  {.}
+
+# E) STATISTICAL ANALYSIS, OUTCOME: Immunosuppressant, METHOD: LINEAR REGRESSION (t-test) 
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Immunosuppressant analysis", lvl = 2) %>%
+  # linear model for binary function (equivalent to t-test)
+  mt_stats_univ_lm(formula = ~ Immunosuppressant,
+                   stat_name = "Immunosuppressant met") %>%
+  # add multiple testing correction
+  mt_post_multtest(stat_name = "Immunosuppressant met", method = "BH") %>%
+  # add stats logging
+  mt_reporting_stats(stat_name = "Immunosuppressant met", stat_filter = p.adj < 0.05) %>%
+  # write statistical results to file
+  mt_write_stats(file = "Immunosuppressant analysis.xlsx") %>%
+  # pvalue histogram
+  mt_plots_pval_hist(stat_list = "Immunosuppressant met") %>%
+  # volcano plot as overview of results
+  mt_plots_volcano(stat_name = "Immunosuppressant met",
+                   x = statistic,
+                   feat_filter = p.adj < 0.05,
+                   colour       = p.adj < 0.05) %>%
+  # boxplot
+  mt_plots_box_scatter(stat_name          ="Immunosuppressant met",
+                       x                  = Immunosuppressant,
+                       fill               = Immunosuppressant,
+                       plot_type          = "box",
+                       feat_filter       = p.adj < 0.05,
+                       feat_sort         = p.value,
+                       annotation         = "{sprintf('P-value: %.2e', p.value)}\nPadj: {sprintf('%.2e', p.adj)}") %>%
+  {.}
+
+# E) STATISTICAL ANALYSIS, OUTCOME: Mesalamine, METHOD: LINEAR REGRESSION (t-test) 
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Mesalamine analysis", lvl = 2) %>%
+  # linear model for binary function (equivalent to t-test)
+  mt_stats_univ_lm(formula = ~ Mesalamine,
+                   stat_name = "Mesalamine met") %>%
+  # add multiple testing correction
+  mt_post_multtest(stat_name = "Mesalamine met", method = "BH") %>%
+  # add stats logging
+  mt_reporting_stats(stat_name = "Mesalamine met", stat_filter = p.adj < 0.05) %>%
+  # write statistical results to file
+  mt_write_stats(file = "Mesalamine analysis.xlsx") %>%
+  # pvalue histogram
+  mt_plots_pval_hist(stat_list = "Mesalamine met") %>%
+  # volcano plot as overview of results
+  mt_plots_volcano(stat_name = "Mesalamine met",
+                   x = statistic,
+                   feat_filter = p.adj < 0.05,
+                   colour       = p.adj < 0.05) %>%
+  # boxplot
+  mt_plots_box_scatter(stat_name          ="Mesalamine met",
+                       x                  = Mesalamine,
+                       fill               = Mesalamine,
+                       plot_type          = "box",
+                       feat_filter       = p.adj < 0.05,
+                       feat_sort         = p.value,
+                       annotation         = "{sprintf('P-value: %.2e', p.value)}\nPadj: {sprintf('%.2e', p.adj)}") %>%
+  {.}
+
+# E) STATISTICAL ANALYSIS, OUTCOME: Steroids, METHOD: LINEAR REGRESSION (t-test) 
+
+D1 <- D1 %>%
+  # heading for html file
+  mt_reporting_heading(heading = "Steroids analysis", lvl = 2) %>%
+  # linear model for binary function (equivalent to t-test)
+  mt_stats_univ_lm(formula = ~ Steroids,
+                   stat_name = "Steroids met") %>%
+  # add multiple testing correction
+  mt_post_multtest(stat_name = "Steroids met", method = "BH") %>%
+  # add stats logging
+  mt_reporting_stats(stat_name = "Steroids met", stat_filter = p.adj < 0.05) %>%
+  # write statistical results to file
+  mt_write_stats(file = "Steroids analysis.xlsx") %>%
+  # pvalue histogram
+  mt_plots_pval_hist(stat_list = "Steroids met") %>%
+  # volcano plot as overview of results
+  mt_plots_volcano(stat_name = "Steroids met",
+                   x = statistic,
+                   feat_filter = p.adj < 0.05,
+                   colour       = p.adj < 0.05) %>%
+  # boxplot
+  mt_plots_box_scatter(stat_name          ="Steroids met",
+                       x                  = Steroids,
+                       fill               = Steroids,
+                       plot_type          = "box",
+                       feat_filter       = p.adj < 0.05,
+                       feat_sort         = p.value,
+                       annotation         = "{sprintf('P-value: %.2e', p.value)}\nPadj: {sprintf('%.2e', p.adj)}") %>%
+  {.}
+
+
