@@ -1,5 +1,7 @@
 # Here, we will show the "Maplet" codes we used to perform specific quality and statistical tests using the same summarized experiments (D1) from the starting the metabotools file
 
+--------------- PCA Graph ---------------
+
 # D) GLOBAL STATISTICS : PCA
 
 assay(D1)[ which(is.na(assay(D1)), arr.ind = TRUE) ] = 0
@@ -9,8 +11,10 @@ D1 <- D1 %>%
   # plot PCA 
   mt_plots_pca(scale_data = T, title = "Scaled PCA - Diagnosis", color= Diagnosis, exp_var_plot=T, size=2.5, ggadd= theme(panel.background = element_rect(fill = "white", colour = "grey50"))) %>%
   {.}
-
 D1 <- D1 %>% mt_reporting_html(file = "PCA.html", title = "IBD - PCA")
+
+
+--------------- LINEAR REGRESSION of the six phenotypes ---------------
 
 
 # E) STATISTICAL ANALYSIS, OUTCOME: Diagnosis, METHOD: LINEAR REGRESSION (t-test) 
@@ -232,4 +236,6 @@ D1 <- D1 %>%
                        annotation         = "{sprintf('P-value: %.2e', p.value)}\nPadj: {sprintf('%.2e', p.adj)}") %>%
   {.}
 
+
+--------------- By the end of this ---------------
 
