@@ -88,4 +88,4 @@ D2 <- D1 %>%
                    stat_name = "UC_CD") %>%
   mt_write_stats(file = "D2_Metabolites_Analysis_2.xlsx",stat_list=c("Group","ctr_CD","ctr_UC","Gctr_both","UC_CD"),feat_col="Putative.Chemical.Class") %>%
 
----------------   ---------------
+--------------- To view the excel sheets (Spearman correlation and pairwise comparison): Kindly see results folder --------------
