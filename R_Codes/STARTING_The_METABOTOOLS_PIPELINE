@@ -3,7 +3,7 @@
 
 --------------- STARTING A METABOTOOLS PIPELINE ---------------
 
-A) Installing and loading the necessary packages 
+# A) Installing and loading the necessary packages 
 
 rm(list=ls())
 #devtools::install_github(repo="krumsieklab/maplet@v1.1.2", subdir="maplet")
@@ -26,7 +26,7 @@ purrr::zap()
 file_data_metabolome <- system.file("extdata", "example_data/Metabolome_data.xlsx", package = "maplet")
 print (file_data_metabolome)
 
-B) Starting the pipeline by loading the data and the annotations: 
+# B) Starting the pipeline by loading the data and the annotations: 
 
 D <-
   
@@ -56,7 +56,7 @@ D <-
   rowData(D)$name=make.names(rowData(D)$name)
   rownames(D)=rowData(D)$name
 
-C) PREPROCESSING: MISSINGNESS ANALYSIS
+# C) PREPROCESSING: MISSINGNESS ANALYSIS
 
 D1 <- D %>%
   mt_pre_zero_to_na() %>%
@@ -72,7 +72,7 @@ D1 <- D %>%
   mt_post_multtest(stat_name="missingness", method="BH") %>%
   {.}
 
-C) PREPROCESSING: NORMALIZATION
+# C) PREPROCESSING: NORMALIZATION
 
 D1 <- D1 %>%
   # heading for html file
@@ -96,7 +96,7 @@ D1 <- D1 %>%
   mt_reporting_data() %>%
   {.}
 
-C) PREPROCESSING: FILTERING MISSING VALUES
+# C) PREPROCESSING: FILTERING MISSING VALUES
 
 D1 <- D1 %>%
   mt_modify_filter_samples(filter = !is.na(Diagnosis)) %>%
