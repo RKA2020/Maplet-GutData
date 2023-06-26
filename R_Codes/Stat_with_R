@@ -1,2 +1,91 @@
 We also performed other statistical tests outside of maplet using the same (D1) summarized experiments (chisquare, Spearman correlation, pairwise comparison)
 
+--------------- Chisquare ---------------
+
+# F) compare Diagnosis vs. all parameters (chisquare)
+
+table(D1$Diagnosis,D1$Antibiotic)
+chisq.test(D1$Diagnosis,D1$Antibiotic, correct = TRUE,
+           p = rep(1/length(x), length(x)), rescale.p = FALSE,
+           simulate.p.value = FALSE, B = 2000)
+
+table(D1$Diagnosis,D1$Fecal.Calprotectin)
+chisq.test(D1$Diagnosis,D1$Fecal.Calprotectin, correct = TRUE,
+           p = rep(1/length(x), length(x)), rescale.p = FALSE,
+           simulate.p.value = FALSE, B = 2000)
+
+table(D1$Diagnosis,D1$Age)
+chisq.test(D1$Diagnosis,D1$Age, correct = TRUE,
+           p = rep(1/length(x), length(x)), rescale.p = FALSE,
+           simulate.p.value = FALSE, B = 2000)
+
+table(D1$Diagnosis,D1$Immunosuppressant)
+chisq.test(D1$Diagnosis,D1$Immunosuppressant, correct = TRUE,
+           p = rep(1/length(x), length(x)), rescale.p = FALSE,
+           simulate.p.value = FALSE, B = 2000)
+
+table(D1$Diagnosis,D1$Mesalamine)
+chisq.test(D1$Diagnosis,D1$Mesalamine, correct = TRUE,
+           p = rep(1/length(x), length(x)), rescale.p = FALSE,
+           simulate.p.value = FALSE, B = 2000)
+
+table(D1$Diagnosis,D1$Steroids)
+chisq.test(D1$Diagnosis,D1$Steroids, correct = TRUE,
+           p = rep(1/length(x), length(x)), rescale.p = FALSE,
+           simulate.p.value = FALSE, B = 2000)
+
+--------------- Spearman correlation ---------------
+
+# G) Spearman correlation
+
+D_correlationMt= cor(t(assay(D1)), t(assay(D1)),method="spearman")
+heatmap(D_correlationMt)
+colnames(D_correlationMt)[1]=paste("\t",colnames(D_correlationMt)[1],sep="")
+write.table(D_correlationMt,file="ss_correlationMt.tsv",sep="\t",row.names=TRUE,quote = FALSE)
+
+--------------- pairwise comparison ---------------
+
+# H) # creating additional variables to compare between diagnosis
+
+# group control vs CD
+D1$ctr_CD=rep(NA,dim(D1)[2])
+D1$ctr_CD[which(D1$Diagnosis=="Control")]="control"
+D1$ctr_CD[which(D1$Diagnosis=="CD")]="CD"
+table(D1$ctr_CD,useNA="ifany")
+
+# group control vs UC
+D1$ctr_UC=rep(NA,dim(D1)[2])
+D1$ctr_UC[which(D1$Diagnosis=="Control")]="control"
+D1$ctr_UC[which(D1$Diagnosis=="UC")]="UC"
+table(D1$ctr_UC,useNA="ifany")
+
+# group control vs both 
+D1$Gctr_both=rep(NA,dim(D1)[2])
+D1$Gctr_both[which(D1$Diagnosis=="Control")]="control"
+D1$Gctr_both[which(D1$Diagnosis!="Control")]="both"
+table(D1$Gctr_both,useNA="ifany")
+
+# US vs CD
+D1$UC_CD=rep(NA,dim(D1)[2])
+D1$UC_CD[which(D1$Diagnosis=="CD")]="CD"
+D1$UC_CD[which(D1$Diagnosis=="UC")]="UC"
+table(D1$UC_CD,useNA="ifany")
+
+# STATISTICAL ANALYSIS: 
+
+D2 <- D1 %>%
+  mt_clean_remove_results()%>%
+  # linear model for binary function (equivalent to t-test)
+  mt_stats_univ_lm(formula = ~ Diagnosis,
+                   stat_name = "Group") %>%
+  mt_stats_univ_lm(formula = ~ctr_CD ,
+                   stat_name = "ctr_CD") %>%
+  mt_stats_univ_lm(formula = ~ctr_UC ,
+                   stat_name = "ctr_UC") %>%
+  mt_stats_univ_lm(formula = ~Gctr_both,
+                   stat_name = "Gctr_both") %>%
+  mt_stats_univ_lm(formula = ~UC_CD,
+                   stat_name = "UC_CD") %>%
+  mt_write_stats(file = "D2_Metabolites_Analysis_2.xlsx",stat_list=c("Group","ctr_CD","ctr_UC","Gctr_both","UC_CD"),feat_col="Putative.Chemical.Class") %>%
+
+---------------   ---------------
