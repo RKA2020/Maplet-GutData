@@ -29,7 +29,7 @@ for (i in ix){
   } 
   
   xdata=D1$Diagnosis
-  boxplot(pdata~xdata,notch=TRUE,xlab="Group",ylab="log.concentration",main=lmet)
+  boxplot(pdata~xdata,notch=TRUE,xlab="Group",ylab="log ion count",main=lmet)
 }
 
 dev.off()
