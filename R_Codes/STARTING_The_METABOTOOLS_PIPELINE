@@ -1,5 +1,5 @@
 # The published data had two datasets for the metabolome and microbiome data (PRISM: 155 samples and validation cohort: 65 samples)
-# As a start, we focused our analysis on the metabolites part of the PRISM samples 
+# As a start, we focused our analysis on the metabolites part of the PRISM samples. 
 
 --------------- STARTING A METABOTOOLS PIPELINE ---------------
 
