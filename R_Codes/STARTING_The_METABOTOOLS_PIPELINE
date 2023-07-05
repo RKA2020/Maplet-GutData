@@ -1,28 +1,28 @@
 # The published data had two datasets for the metabolome and microbiome data (PRISM: 155 samples and validation cohort: 65 samples)
 # As a start, we focused our analysis on the metabolites part of the PRISM samples. 
+# kindly check the Metabolites_Dataset folder for the excel file used in this exercise ("Metabolome_data.xlsx") 
 
 --------------- STARTING A METABOTOOLS PIPELINE ---------------
 
-# A) Installing and loading the necessary packages 
-
 rm(list=ls())
-#devtools::install_github(repo="krumsieklab/maplet@v1.1.2", subdir="maplet")
-#'force= TRUE'
-#install.packages("matrixStats")
-#install.packages("MatrixGenerics")
-#install.packages("SummarizedExperiment")
-#install.packages("magrittr")
-#install.packages("DT")
-library (usethis)
+
+# A) Installing and loading the necessary packages: 
+
+# To download the latest stable version of maplet:  
+
 library (devtools)
-library(matrixStats)
-library (MatrixGenerics)
-library(SummarizedExperiment)
+devtools::install_github(repo="krumsieklab/maplet@v1.1.2", subdir="maplet")
+
+# More information about the installation of maplet on this link : https://github.com/krumsieklab/maplet
+
 library(maplet)
 library(tidyverse)
-library(magrittr)
-library(DT)
+
 purrr::zap()
+
+# You can find the excel file we used for this exercise in Metabolites_Dataset folder under the name ("Metabolome_data.xlsx") 
+# Note: once you download and save the excel file into your directory, kindly adjust the code in line 26 accordingly
+
 file_data_metabolome <- system.file("extdata", "example_data/Metabolome_data.xlsx", package = "maplet")
 print (file_data_metabolome)
 
