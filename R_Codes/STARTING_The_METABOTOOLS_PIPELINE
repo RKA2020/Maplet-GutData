@@ -105,7 +105,12 @@ D1 <- D1 %>%
   mt_plots_missingness(feat_max=0.5) %>%
   {.}
 
---------------- After running the codes : 3829 elements were in the large generated summarized experiments ---------------
+D1 <-  D1 %>% mt_reporting_html(file = "Pre_processing.html",
+                         title = "PRISM samples")
 
+--------------- After running the codes : 1) 3829 elements were in the large generated summarized experiments ---------------
+                                          2) An html file will be generated 
+
+--------------- you can view the results of the pre-processing steps using this link (file:///Users/DoctorR/Metabolome_IBDdataset_Maplet/Pre_processing.html) -------------
 
 
