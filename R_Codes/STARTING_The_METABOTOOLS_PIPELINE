@@ -35,7 +35,6 @@ D <-
   mt_anno_xls(file=file_data_metabolome, sheet="Metabolite_features",anno_type="features", anno_id_col="Metabolomic Feature", data_id_col ="name") %>%
   # load clinical (colData) annotations
   mt_anno_xls(file=file_data_metabolome, sheet="Metabolome_metadata_PRISM", anno_type="samples", anno_id_col ="Sample_PRISM", data_id_col ="sample") %>%
-  # # log assay dimensions and number of columns for both metabolite and clincial annotations
   mt_reporting_data() %>%
   # start timing
   mt_reporting_tic() %>%
@@ -106,7 +105,7 @@ D1 <- D1 %>%
   mt_plots_missingness(feat_max=0.5) %>%
   {.}
 
---------------- After running the codes : 3829 elements were in the large summarized experiments ---------------
+--------------- After running the codes : 3829 elements were in the large generated summarized experiments ---------------
 
 
 
