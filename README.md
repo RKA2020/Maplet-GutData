@@ -11,5 +11,5 @@ The aim of the project is to
       1- Check the feasibility of using Maplet in gut microbiome data analysis 
       2- Check the reproducibility of the results generated from the article 
       
-You can find the available supplementary data for this paper [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
+You can find the available supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
 
