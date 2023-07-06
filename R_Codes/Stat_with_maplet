@@ -239,9 +239,10 @@ D1 <- D1 %>%
   {.}
 
 
---------------- After running the codes : 1) An html report will be generated for the PCA graph 
-                                          2) An excel sheet will be generated with the name "Steroids analysis.xlsx" (the excel file will contain the LR results for the seven phenotypes such as: stastics, p-value, p-adj, meansq, sumsq + the missigness report)
+--------------- After running the codes : 1) An html report will be generated for the PCA graph --------------
+                                          2) An excel sheet will be generated with the name "Steroids analysis.xlsx" 
+(the excel file will contain the linear regression results for the seven phenotypes such as: stastics, p-value, p-adj, meansq, sumsq + the file will show the missigness report)
 
---------------- You can view the generated html report of the PCA results using this link (file:///Users/DoctorR/Metabolome_IBDdataset_Maplet/Pre_processing.html) -------------
+--------------- You can view the generated html report of the PCA results using this link (file:///Users/DoctorR/Metabolome_IBDdataset_Maplet/PCA.html) -------------
 
---------------- To view the excel sheet : Kindly see results folder --------------
+--------------- To view the excel sheet : Kindly see results folder (file name: Steroids analysis.xlsx) --------------
