@@ -1,16 +1,18 @@
-# Here, we will show the "Maplet" codes we used to perform specific quality and statistical tests using the same summarized experiments (D1) from the starting the metabotools file
+# Here, we used "Maplet" in R to perform specific quality and statistical tests using the same summarized experiments (D1) from the starting the metabotools file
 
 --------------- PCA Graph ---------------
 
 # D) GLOBAL STATISTICS : PCA
 
 assay(D1)[ which(is.na(assay(D1)), arr.ind = TRUE) ] = 0
+
 D1 <- D1 %>%
   # heading for html file
   mt_reporting_heading(heading = "Global Statistics", lvl = 1) %>%
   # plot PCA 
   mt_plots_pca(scale_data = T, title = "Scaled PCA - Diagnosis", color= Diagnosis, exp_var_plot=T, size=2.5, ggadd= theme(panel.background = element_rect(fill = "white", colour = "grey50"))) %>%
   {.}
+
 D1 <- D1 %>% mt_reporting_html(file = "PCA.html", title = "IBD - PCA")
 
 
@@ -237,6 +239,7 @@ D1 <- D1 %>%
   {.}
 
 
---------------- After running the codes : An excel sheet will be generated (the file will contain the LR results for the seven phenotypes such as: stastics, p-value, p-adj, meansq, sumsq) ---------------
+--------------- After running the codes : 1) An excel sheet will be generated with the name "Steroids analysis.xlsx" ---------------
+                (the file will contain the LR results for the seven phenotypes such as: stastics, p-value, p-adj, meansq, sumsq)
 --------------- The same excel sheet will also have the missigness report ---------------
 --------------- To view the excel sheet : Kindly see results folder --------------
