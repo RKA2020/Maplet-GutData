@@ -3,7 +3,7 @@
 
 --------------- Box plots --------------
 
-# I) we generated in R a PDF file with a box plot for each of the metabolites: ( we used 
+# I) we generated in R a PDF file with a box plot for each of the metabolites (We used (D1) summarized experiments)
 
 rownames(D1)=paste(rownames(D1),"Metabolite")
 rownames(D1)=make.names(rownames(D1))
@@ -37,7 +37,7 @@ dev.off()
 
 --------------- Pathway enrichment -------------
 
-# J) We used the pairwise comparison results to perform pathway enrichment of (control(ctr) vs CD, control(ctr) vs UC, and UC vs CD) and generate a PDF file for each enrichment
+# J) Using the pairwise comparison results (D2_Metabolites_Analysis_2.xlsx), we performed pathway enrichment of (control(ctr) vs CD, control(ctr) vs UC, and UC vs CD) and generate a PDF file for each enrichment
 
 # control(ctr) vs CD
 
