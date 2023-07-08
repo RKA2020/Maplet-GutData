@@ -8,7 +8,7 @@ Here, we will use "Maplet" to analyze a publicly available dataset from the pape
 
 The aim of the project is to 
      
-      1- Check the feasibility of using Maplet in gut microbiome data analysis 
+      1- Check the feasibility of using Maplet in metabolome and gut microbiome data analysis 
       2- Check the reproducibility of the results generated from the article 
       
 You can find the available supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
