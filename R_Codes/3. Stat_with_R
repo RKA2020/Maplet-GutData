@@ -46,7 +46,7 @@ write.table(D_correlationMt,file="ss_correlationMt.tsv",sep="\t",row.names=TRUE,
 
 --------------- pairwise comparisons ---------------
 
-# H) # creating additional variables to compare between diagnosis
+# H) # creating additional variables to compare between diagnosis 
 
 # group control vs CD
 D1$ctr_CD=rep(NA,dim(D1)[2])
@@ -72,7 +72,7 @@ D1$UC_CD[which(D1$Diagnosis=="CD")]="CD"
 D1$UC_CD[which(D1$Diagnosis=="UC")]="UC"
 table(D1$UC_CD,useNA="ifany")
 
-# STATISTICAL ANALYSIS: 
+# Performed statistical analysis on the created variables
 
 D2 <- D1 %>%
   mt_clean_remove_results()%>%
@@ -95,8 +95,6 @@ D2 <- D1 %>%
                                           2) A tsv file for the Spearman correlation will be generated under the name "ss_correlationMt.tsv"
                                           3) An excel file for the pairwise comparison will be generated "D2_Metabolites_Analysis_2.xlsx"
 
-# # We saved and uploaded the Spearman correlation file as an excel file in the results folder and we call it "
+# We saved and uploaded the Spearman correlation tsv as an excel file in the results folder and we called it "Spearman_correlation .xls"
 
---------------- You can view the generated html report of the PCA results using this link (file:///Users/DoctorR/Metabolome_IBDdataset_Maplet/PCA.html) -------------
-
---------------- To view the excel file with all the results : Kindly see results folder (file name: Steroids analysis.xlsx) --------------
+# The "D2_Metabolites_Analysis_2.xlsx" file generated for the pairwise comparisons has 
