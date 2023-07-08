@@ -1,5 +1,12 @@
+# The published data has two datasets for the metabolome and microbiome data (PRISM: 155 samples and validation cohort: 65 samples)
+
+# As a start, we focused our analysis on the metabolites part of the PRISM samples. 
+
 # Here, you will find the excel file we used for the analysis under the name "Metabolome_data.xlsx"
+
 # The excel file contains three sheets (Metabolome_metadata_PRISM, Metabolite_abundance_PRISM, and the Metabolite_features)
+
 # You can save the excel file into your work directory 
+
 # Please adjust the codes based on "your" location of the downloaded excel file before running the code 
                 
