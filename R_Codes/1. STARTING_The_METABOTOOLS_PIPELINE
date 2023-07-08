@@ -1,5 +1,3 @@
-# The published data has two datasets for the metabolome and microbiome data (PRISM: 155 samples and validation cohort: 65 samples)
-# As a start, we focused our analysis on the metabolites part of the PRISM samples. 
 # kindly check the Metabolites_Dataset folder for the excel file used in this exercise ("Metabolome_data.xlsx") 
 
 --------------- STARTING A METABOTOOLS PIPELINE ---------------
