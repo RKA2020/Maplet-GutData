@@ -39,16 +39,15 @@ dev.off()
 
 # J) Using the pairwise comparison results (D2_Metabolites_Analysis_2.xlsx), we performed pathway enrichment of (control(ctr) vs CD, control(ctr) vs UC, and UC vs CD) and generate a PDF file for each enrichment
 
-# control(ctr) vs CD
+# Ctr vs CD 
 
 library(readxl)
-
 ctr_cd_stat= read_excel(path = "D2_Metabolites_Analysis_2.xlsx",sheet="ctr_CD")
-boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "pathway",
-        ylab = "stat", main = "Chemical Pathway")
+boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "",
+        ylab = "stat", main = "Chemical Pathway",las=2,cex.axis=0.4)
 
 try(dev.off(),silent = TRUE)
-pdf("Metabolic_enrichments_CD.pdf",height=100,width=10)
+pdf("Ctr_Vs_CD.pdf",height=17,width=10)
 stat= ctr_cd_stat$statistic
 feature= ctr_cd_stat$feat_col
 x=table(feature)
@@ -76,18 +75,19 @@ for (f in names(x2)[s$ix]){
   feature2=c(feature2,rep(f,length(ix)))
 }
 feature3=factor(feature2,levels=unique(feature2))
-boxplot(stat2~feature3,horizontal=TRUE)
-
+boxplot(stat2~feature3,horizontal=TRUE, xlab = "",
+        ylab = "", main = "Ctr_Vs_CD",las=2,cex.axis=0.4,par(mai = c(1.5, 2, 1.5, 0.5)))
+abline(v=0)
 dev.off()
 
-# control(ctr) vs UC
+# Ctr vs UC 
 
 ctr_cd_stat= read_excel(path = "D2_Metabolites_Analysis_2.xlsx",sheet="ctr_UC")
-boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "pathway",
-        ylab = "stat", main = "Chemical Pathway")
+boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "",
+        ylab = "stat", main = "Chemical Pathway",las=2,cex.axis=0.4)
 
 try(dev.off(),silent = TRUE)
-pdf("Metabolic_enrichments_UC.pdf",height=100,width=10)
+pdf("Ctr_Vs_UC.pdf",height=17,width=10)
 stat= ctr_cd_stat$statistic
 feature= ctr_cd_stat$feat_col
 x=table(feature)
@@ -115,18 +115,20 @@ for (f in names(x2)[s$ix]){
   feature2=c(feature2,rep(f,length(ix)))
 }
 feature3=factor(feature2,levels=unique(feature2))
-boxplot(stat2~feature3,horizontal=TRUE,main="UC")
+boxplot(stat2~feature3,horizontal=TRUE,xlab = "",
+        ylab = "", main = "Ctr_Vs_CD",las=2,cex.axis=0.4,par(mai = c(1.5, 2, 1.5, 0.5)))
+abline(v=0)
 
 dev.off()
 
-# CD vs UC
+# UC vs CD 
 
 ctr_cd_stat= read_excel(path = "D2_Metabolites_Analysis_2.xlsx",sheet="UC_CD")
-boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "pathway",
-        ylab = "stat", main = "Chemical Pathway")
+boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "",
+        ylab = "stat", main = "Chemical Pathway",las=2,cex.axis=0.4)
 
 try(dev.off(),silent = TRUE)
-pdf("Metabolic_enrichments_UC_CD.pdf",height=100,width=10)
+pdf("UC_Vs_CD.pdf",height=17,width=10)
 stat= ctr_cd_stat$statistic
 feature= ctr_cd_stat$feat_col
 x=table(feature)
@@ -154,8 +156,10 @@ for (f in names(x2)[s$ix]){
   feature2=c(feature2,rep(f,length(ix)))
 }
 feature3=factor(feature2,levels=unique(feature2))
-boxplot(stat2~feature3,horizontal=TRUE,main="UC_CD")
+boxplot(stat2~feature3,horizontal=TRUE,xlab = "",
+        ylab = "", main = "UC_Vs_CD",las=2,cex.axis=0.4,par(mai = c(1.5, 2, 1.5, 0.5)))
+abline(v=0)
 
 dev.off()
 
---------------- To view the PDF files: Kindly see results folder --------------
+
