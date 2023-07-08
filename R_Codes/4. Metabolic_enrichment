@@ -42,6 +42,7 @@ dev.off()
 # Ctr vs CD 
 
 library(readxl)
+
 ctr_cd_stat= read_excel(path = "D2_Metabolites_Analysis_2.xlsx",sheet="ctr_CD")
 boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "",
         ylab = "stat", main = "Chemical Pathway",las=2,cex.axis=0.4)
@@ -82,14 +83,15 @@ dev.off()
 
 # Ctr vs UC 
 
-ctr_cd_stat= read_excel(path = "D2_Metabolites_Analysis_2.xlsx",sheet="ctr_UC")
-boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "",
+library(readxl)
+ctr_uc_stat= read_excel(path = "D2_Metabolites_Analysis_2.xlsx",sheet="ctr_UC")
+boxplot(ctr_uc_stat$statistic~ctr_uc_stat$feat_col, xlab = "",
         ylab = "stat", main = "Chemical Pathway",las=2,cex.axis=0.4)
 
 try(dev.off(),silent = TRUE)
 pdf("Ctr_Vs_UC.pdf",height=17,width=10)
-stat= ctr_cd_stat$statistic
-feature= ctr_cd_stat$feat_col
+stat= ctr_uc_stat$statistic
+feature= ctr_uc_stat$feat_col
 x=table(feature)
 ix=which(x>10)
 x2=x[ix]
@@ -116,21 +118,22 @@ for (f in names(x2)[s$ix]){
 }
 feature3=factor(feature2,levels=unique(feature2))
 boxplot(stat2~feature3,horizontal=TRUE,xlab = "",
-        ylab = "", main = "Ctr_Vs_CD",las=2,cex.axis=0.4,par(mai = c(1.5, 2, 1.5, 0.5)))
+        ylab = "", main = "Ctr_Vs_UC",las=2,cex.axis=0.4,par(mai = c(1.5, 2, 1.5, 0.5)))
 abline(v=0)
 
 dev.off()
 
 # UC vs CD 
 
-ctr_cd_stat= read_excel(path = "D2_Metabolites_Analysis_2.xlsx",sheet="UC_CD")
-boxplot(ctr_cd_stat$statistic~ctr_cd_stat$feat_col, xlab = "",
+library(readxl)
+uc_cd_stat= read_excel(path = "D2_Metabolites_Analysis_2.xlsx",sheet="UC_CD")
+boxplot(uc_cd_stat$statistic~uc_cd_stat$feat_col, xlab = "",
         ylab = "stat", main = "Chemical Pathway",las=2,cex.axis=0.4)
 
 try(dev.off(),silent = TRUE)
 pdf("UC_Vs_CD.pdf",height=17,width=10)
-stat= ctr_cd_stat$statistic
-feature= ctr_cd_stat$feat_col
+stat= uc_cd_stat$statistic
+feature= uc_cd_stat$feat_col
 x=table(feature)
 ix=which(x>10)
 x2=x[ix]
