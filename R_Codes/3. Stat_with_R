@@ -103,5 +103,6 @@ D2 <- D1 %>%
 # In the "ALL" sheet: 1) We performed ANOVA and pairwise comparisons analysis for the data at a Bonferroni significance of 0.05 
                       2) We applied a stringent cutoff for filtering the five variables which resulted in the appearance of four patterns (Control different, CD different, UC different, and ladder)
 
-
+--------------- To view the excel files : Kindly see results folder (Spearman correlation: file name: "Spearman_correlation .xls" ) --------------
+                                                                    (Pairwise comparisons : file name: "D2_Metabolites_Analysis_2.xlsx")         
 
