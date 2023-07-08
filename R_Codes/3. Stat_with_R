@@ -95,6 +95,7 @@ D2 <- D1 %>%
                                           2) A tsv file for the Spearman correlation will be generated under the name "ss_correlationMt.tsv"
                                           3) An excel file for the pairwise comparison will be generated "D2_Metabolites_Analysis_2.xlsx"
 
-# We saved and uploaded the Spearman correlation tsv as an excel file in the results folder and we called it "Spearman_correlation .xls"
+# We saved and uploaded the Spearman correlation results on Github as an excel file in the results folder and we called it "Spearman_correlation .xls"
 
-# The "D2_Metabolites_Analysis_2.xlsx" file generated for the pairwise comparisons has 
+# The "D2_Metabolites_Analysis_2.xlsx" file generated for the pairwise comparisons has five sheets for each of the linear model test ("Group","ctr_CD","ctr_UC","Gctr_both","UC_CD")
+# To ensure a more convenientthe viewing, filtering, and analyzing of the results, we have created a new sheet "ALL" in the "D2_Metabolites_Analysis_2.xlsx"
