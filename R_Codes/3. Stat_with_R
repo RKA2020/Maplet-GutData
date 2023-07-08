@@ -40,7 +40,6 @@ chisq.test(D1$Diagnosis,D1$Steroids, correct = TRUE,
 # G) Spearman correlation
 
 D_correlationMt= cor(t(assay(D1)), t(assay(D1)),method="spearman")
-heatmap(D_correlationMt)
 colnames(D_correlationMt)[1]=paste("\t",colnames(D_correlationMt)[1],sep="")
 write.table(D_correlationMt,file="ss_correlationMt.tsv",sep="\t",row.names=TRUE,quote = FALSE)
 
