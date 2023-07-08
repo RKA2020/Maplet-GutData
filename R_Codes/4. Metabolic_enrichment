@@ -1,8 +1,9 @@
-Metabolic patterns Visualization (boxplots and enrichment pathway analysis) 
+# Here, we wanted to visualize the metabolic patterns observed in the data set
+# We generated boxplots for each of the metabolites and we performed an enrichment pathway analysis
 
 --------------- Box plots --------------
 
-# I) we generated in R a PDF file with a box plot for each of the metabolites
+# I) we generated in R a PDF file with a box plot for each of the metabolites: ( we used 
 
 rownames(D1)=paste(rownames(D1),"Metabolite")
 rownames(D1)=make.names(rownames(D1))
