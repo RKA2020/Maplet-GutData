@@ -244,7 +244,7 @@ D1 <- D1 %>%
                                           2) Seven excel files will be generated for each linear regressions results of the seven phenotypes 
 
 # To view the file that has all the results combined, check the excel file for the last linear regression in your code: in our case it was "Steroids analysis.xlsx" 
-# The "Steroids analysis.xlsx" excel file will show the linear regression results for the seven phenotypes, and the missingness report
+# The "Steroids analysis.xlsx" excel file has the linear regression results for the seven phenotypes, and the missingness report
 # To ensure a more convenientthe viewing, filtering, and analyzing of the results, we have created a new sheet "ALL" in "Steroids analysis.xlsx" excel file and combined the statstics and the p-values of all the seven phenotypes
 
 --------------- You can view the generated html report of the PCA results using this link (file:///Users/DoctorR/Metabolome_IBDdataset_Maplet/PCA.html) -------------
