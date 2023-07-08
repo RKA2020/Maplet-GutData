@@ -162,4 +162,8 @@ abline(v=0)
 
 dev.off()
 
+--------------- After running the codes : 1) A PDF file named: "boxplot_metabolites.pdf" will be generated  --------------
 
+                                          2) Three PDF files with the names ("Ctr_Vs_CD.pdf", "Ctr_Vs_UC.pdf", and "UC_Vs_CD.pdf") for the pathway enrichment analysis
+
+# 
