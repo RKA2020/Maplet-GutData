@@ -93,11 +93,9 @@ D2 <- D1 %>%
 
 --------------- After running the codes : 1) You can view the Chisquare results in the R console as you run the codes --------------
                                           2) A tsv file for the Spearman correlation will be generated under the name "ss_correlationMt.tsv"
-                                          3) An excel file 
+                                          3) An excel file for the pairwise comparison will be generated "D2_Metabolites_Analysis_2.xlsx"
 
-# To view the file that has all the results combined, check the excel file for the last linear regression in your code: in our case it was "Steroids analysis.xlsx" 
-# The "Steroids analysis.xlsx" excel file will show the linear regression results for the seven phenotypes, and the missingness report
-# To ensure a more convenientthe viewing, filtering, and analyzing of the results, we have created a new sheet "ALL" in "Steroids analysis.xlsx" excel file and combined the statstics and the p-values of all the seven phenotypes
+# # We saved and uploaded the Spearman correlation file as an excel file in the results folder and we call it "
 
 --------------- You can view the generated html report of the PCA results using this link (file:///Users/DoctorR/Metabolome_IBDdataset_Maplet/PCA.html) -------------
 
