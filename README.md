@@ -8,7 +8,7 @@ To get started with Maplet, you need to install the latest stable version of map
 devtools::install_github(repo="krumsieklab/maplet@v1.2.1", subdir="maplet")
 ```
 
-Additional information about the installation of maplet and examples on how to use maplet can be found on the git hub page of the package [here](https://github.com/krumsieklab/maplet). 
+Additional information about the installation of maplet and examples on how to use maplet can be found on the github page of the package [here](https://github.com/krumsieklab/maplet). 
 
 
 # **The Aim of this Project**
