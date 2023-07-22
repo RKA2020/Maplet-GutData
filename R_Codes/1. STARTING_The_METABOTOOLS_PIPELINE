@@ -1,18 +1,7 @@
-# kindly check the Metabolites_Dataset folder for the excel file used in this exercise ("Metabolome_data.xlsx") 
 
---------------- STARTING A METABOTOOLS PIPELINE ---------------
+# --------------- STARTING A METABOTOOLS PIPELINE ---------------
 
 rm(list=ls())
-
-# A) Installing and loading the necessary packages: 
-
-# To download the latest stable version of maplet:  
-
-library (devtools)
-devtools::install_github(repo="krumsieklab/maplet@v1.1.2", subdir="maplet")
-
-# More information about the installation of maplet on this link : https://github.com/krumsieklab/maplet
-
 library(maplet)
 library(tidyverse)
 
