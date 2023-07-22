@@ -36,6 +36,9 @@ The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance
 
 **You can find the "Metabolome_data.xlsx" file under the "Metabolites_Dataset" folder in this page** 
 
+# **Starting the Analysis**
+
+After loading the "Metabolome_data.xlsx" file in R, we started the maplet metabotool pipealine 
 
 
 
