@@ -24,10 +24,14 @@ We did that to:
 
 # **Getting Started with the Project**
 
-To get started, we first downloaded and saved the supplementary dataset from the above paper. You can find the available supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
+To get started, we first downloaded and saved the supplementary dataset from the above paper. 
+
+You can find the available supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
 
 The supplementary files show the results of two metabolome and microbiome datasets (PRISM: 155 samples and validation cohort: 65 samples) - as a start we focused in this exercise on the PRISM samples. 
 
 We then used the supplementary files to create a new excel file with all the necessary data we need for our analysis under the name: #**"Metabolome_data.xlsx"**. This new excel file contains three sheets (Metabolome_metadata_PRISM, Metabolite_abundance_PRISM, and the Metabolite_features)
+
+
                  
 
