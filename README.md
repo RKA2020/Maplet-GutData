@@ -55,6 +55,6 @@ All the codes uded for the statistical analysis can be found in R_Codes folder u
 **Below are screenshots of some of the results generated:** 
 
 ![Screen Shot 2023-07-22 at 12 07 14 PM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/798741c5-d531-40ff-9e38-d6a9607a9cad)
-        ![Screen Shot 2023-07-22 at 12 10 13 PM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/0cfd14e4-44a4-4eb9-b795-faf11b836101)
+![Screen Shot 2023-07-22 at 12 10 13 PM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/27f00068-95da-4bbb-9d40-5518e8daf324)
 
 
