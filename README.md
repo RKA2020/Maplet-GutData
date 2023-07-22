@@ -28,7 +28,7 @@ To get started, we first downloaded and saved the supplementary dataset from the
 
 You can find the available supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
 
-The supplementary files show the results of two metabolome and microbiome datasets (PRISM: 155 samples and validation cohort: 65 samples) - as a start we focused in this exercise on the PRISM samples. 
+The supplementary files show the results of two metabolome and microbiome datasets for patients with CD, UC, or control (PRISM: 155 samples and validation cohort: 65 samples) - as a start we focused in this exercise on the PRISM samples. 
 
 We then used the supplementary files to create a new excel file with all the necessary data we need for our analysis under the name: **"Metabolome_data.xlsx"**. 
 
@@ -38,9 +38,13 @@ The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance
 
 # **Starting the Analysis**
 
-After loading the "Metabolome_data.xlsx" file in R, we started the maplet metabotool pipealine 
+We first loaded the "Metabolome_data.xlsx" data and annotations in R
 
+We preprocessed the data based on the three diagnosis and performed :(quotient normalization, imputation, and missing values filtering) and generated an html report of the pre-processing results
 
+**Below is a screenshot of the html report generated** 
+![Untitled](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/af748005-6ec1-41c6-9e00-db35f4f20a7b)
 
+The codes for the preprocessing part and the full html report can be found in R_Codes folder under the file:(STARTING_The_METABOTOOLS_PIPELINE) 
                  
 
