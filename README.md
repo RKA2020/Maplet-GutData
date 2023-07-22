@@ -42,6 +42,8 @@ We first loaded the "Metabolome_data.xlsx" data and annotations in R
 
 We preprocessed the data based on the three diagnosis and performed :(quotient normalization, imputation, and missing values filtering) and generated an html report of the pre-processing results
 
+The html report gives a summary output of all the functions/ tests performed on the data
+
 **Below is a screenshot of the html report generated** 
 
 ![Screen Shot 2023-07-22 at 11 45 35 AM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/fbc58eb7-2ae9-4410-ac0b-a020e8c4ea9f)
