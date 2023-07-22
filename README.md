@@ -38,7 +38,7 @@ The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance
 
 # **Starting the Analysis**
 
-Here, we will mention briefly the steps we followed in this analysis. For more detailed explanation please check the folders above.
+Here, we will mention briefly the steps we followed in this analysis. For a detailed explanation, please check the folders above.
 
 To start, we first loaded the "Metabolome_data.xlsx" data and annotations in R. We then preprocessed the data based on the three diagnosis and performed:(quotient normalization, imputation, and missing values filtering) and last generated an html report of the pre-processing results. The html report gives a summary output of all the functions/ tests performed on the data
 
