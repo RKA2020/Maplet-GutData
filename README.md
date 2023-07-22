@@ -50,9 +50,7 @@ The html report gives a summary output of all the functions/ tests performed on 
 
 You can find the codes for the preprocessing part and the full html report in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above
                  
-After preprocessing the data, we performed different statistical analysis (either using maplet codes or R codes)
-
-Such tests include: PCA, linear regression for the phenotypes, Chisquare, and others. 
+After preprocessing the data, we performed different statistical analysis (either using maplet codes or R codes). Such tests include: PCA, linear regression for the phenotypes, Chisquare, and others. 
 
 All the codes uded for the statistical analysis can be found in R_Codes folder under the files "Stat_with_maplet"and"Stat_with_R" above
 
