@@ -1,5 +1,5 @@
 
-# --------------- STARTING A METABOTOOLS PIPELINE ---------------
+#--------------- STARTING A METABOTOOLS PIPELINE ---------------
 
 rm(list=ls())
 library(maplet)
