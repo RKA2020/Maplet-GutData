@@ -48,6 +48,17 @@ The html report gives a summary output of all the functions/ tests performed on 
 
 ![Screen Shot 2023-07-22 at 11 45 35 AM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/fbc58eb7-2ae9-4410-ac0b-a020e8c4ea9f)
 
-The codes for the preprocessing part and the full html report can be found in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above 
+**You can find the codes for the preprocessing part and the full html report can be found in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above** 
                  
+After preprocessing the data, we performed different statistical analysis (either using maplet codes or R codes)
+
+Such tests include: PCA, linear regression for the phentoypes, Chisquare, and others. 
+
+**You can find all the statistical analysis and the codes used in R_Codes folder under the files "Stat_with_maplet"and"Stat_with_R" above** 
+
+**Below are screenshots of some of the results generated** 
+
+![Screen Shot 2023-07-22 at 12 07 14 PM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/798741c5-d531-40ff-9e38-d6a9607a9cad)
+![Screen Shot 2023-07-22 at 12 10 13 PM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/0cfd14e4-44a4-4eb9-b795-faf11b836101)
+
 
