@@ -32,7 +32,7 @@ The supplementary files show the results of two metabolome and microbiome datase
 
 We then used the supplementary files to create a new excel file with all the necessary data we need for our analysis under the name: **"Metabolome_data.xlsx"**. 
 
-The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance, and features of the 155 PRISM samples in three separate sheets (Metabolome_metadata_PRISM, Metabolite_abundance_PRISM, and the Metabolite_features)
+The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance, and features of the 155 PRISM samples in three separate sheets (Metabolome_metadata_PRISM, Metabolite_abundance_PRISM, and the Metabolite_features).
 
 **You can find the "Metabolome_data.xlsx" file under the "Metabolites_Dataset" folder above** 
 
@@ -40,17 +40,17 @@ The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance
 
 Here, we will mention briefly the steps we followed in this analysis. For a detailed explanation, please check the folders above.
 
-To start, we first loaded the "Metabolome_data.xlsx" data and annotations in R. We then preprocessed the data based on the three diagnosis and performed:(quotient normalization, imputation, and missing values filtering) and last generated an html report of the pre-processing results. The html report gives a summary output of all the functions/ tests performed on the data
+To start, we first loaded the "Metabolome_data.xlsx" data and annotations in R. We then preprocessed the data based on the three diagnosis and performed:(quotient normalization, imputation, and missing values filtering) and last generated an html report of the pre-processing results. The html report gives a summary output of all the functions/ tests performed on the data.
 
 **Below is a screenshot of the html report generated:** 
 
 ![Screen Shot 2023-07-22 at 11 45 35 AM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/fbc58eb7-2ae9-4410-ac0b-a020e8c4ea9f)
 
-You can find the codes for the preprocessing part and the full html report in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above
+You can find the codes for the preprocessing part and the full html report in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above.
                  
 After preprocessing the data, we performed different statistical analysis (either using maplet codes or R codes). Such tests include: PCA, linear regression for the phenotypes, Chisquare, and others. 
 
-All the codes uded for the statistical analysis can be found in R_Codes folder under the files "Stat_with_maplet"and"Stat_with_R" above
+All the codes uded for the statistical analysis can be found in R_Codes folder under the files "Stat_with_maplet"and"Stat_with_R" above.
 
 **Below are screenshots of some of the results generated:** 
 
