@@ -48,7 +48,7 @@ The html report gives a summary output of all the functions/ tests performed on 
 
 ![Screen Shot 2023-07-22 at 11 45 35 AM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/fbc58eb7-2ae9-4410-ac0b-a020e8c4ea9f)
 
-**You can find the codes for the preprocessing part and the full html report can be found in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above** 
+**You can find the codes for the preprocessing part and the full html report in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above** 
                  
 After preprocessing the data, we performed different statistical analysis (either using maplet codes or R codes)
 
