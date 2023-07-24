@@ -74,11 +74,13 @@ After applying a stringent cutoff for filtering the five variables, most of the 
 
 **Below is a screenshot of a schematic we generated for the four observed patterns:** 
 
-
-![patterns](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/7689df54-706d-4f60-a745-9e74ff5348bb)
+<p align="center">
+  <img width="400" height="400" src="https://user-images.githubusercontent.com/127655038/255524806-7689df54-706d-4f60-a745-9e74ff5348bb.png">
+</p>
 
 **Here are examples on how the patterns look in the data:**
 
-![patterns_boxplot](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/3220b88d-d661-4848-a61a-0b4071bf3276)
-
+<p align="center">
+  <img width="500" height="500" src="https://user-images.githubusercontent.com/127655038/255528662-3220b88d-d661-4848-a61a-0b4071bf3276.png">
+</p>
 
