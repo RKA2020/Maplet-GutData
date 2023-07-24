@@ -45,7 +45,7 @@ write.table(D_correlationMt,file="ss_correlationMt.tsv",sep="\t",row.names=TRUE,
 
 --------------- pairwise comparisons ---------------
 
-# H) # creating additional variables to compare between diagnosis 
+# H) Creating additional variables to compare between diagnosis 
 
 # group control vs CD
 D1$ctr_CD=rep(NA,dim(D1)[2])
