@@ -75,12 +75,12 @@ After applying a stringent cutoff for filtering the five variables, most of the 
 **Below is a screenshot of a schematic we generated for the four observed patterns:** 
 
 <p align="center">
-  <img width="300" height="200" src="https://user-images.githubusercontent.com/127655038/255524806-7689df54-706d-4f60-a745-9e74ff5348bb.png">
+  <img src="https://user-images.githubusercontent.com/127655038/255524806-7689df54-706d-4f60-a745-9e74ff5348bb.png">
 </p>
 
 **Here are examples on how the patterns look in the data:**
 
 <p align="center">
-  <img width="500" height="500" src="https://user-images.githubusercontent.com/127655038/255528662-3220b88d-d661-4848-a61a-0b4071bf3276.png">
+  <img src="https://user-images.githubusercontent.com/127655038/255528662-3220b88d-d661-4848-a61a-0b4071bf3276.png">
 </p>
 
