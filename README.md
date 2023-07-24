@@ -68,5 +68,6 @@ We also used R to create additional variables to compare between diagnosis (ANOV
 After applying a stringent cutoff for filtering the five variables, Most of the metabolites across the three diagnosis appeared to follow one of the four patterns:(Control different, CD different, UC different, and ladder). 
 
 **Below is a screenshot of a schematic we generated for the four observed patterns:** 
+![patterns](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/7689df54-706d-4f60-a745-9e74ff5348bb)
 
 
