@@ -90,18 +90,18 @@ D2 <- D1 %>%
 
 
 
---------------- After running the codes : 1) You can view the Chisquare results in the R console as you run the codes --------------
+#--------------- After running the codes : 1) You can view the Chisquare results in the R console as you run the codes --------------
 
-                                          2) A tsv file for the Spearman correlation will be generated under the name "ss_correlationMt.tsv"
+#                                          2) A tsv file for the Spearman correlation will be generated under the name "ss_correlationMt.tsv"
 # We saved and uploaded the Spearman correlation results on Github as an excel file in the results folder and we called it "Spearman_correlation .xls"
 
-                                          3) An excel file for the pairwise comparison will be generated "D2_Metabolites_Analysis_2.xlsx"
+#                                          3) An excel file for the pairwise comparison will be generated "D2_Metabolites_Analysis_2.xlsx"
 # The "D2_Metabolites_Analysis_2.xlsx" file generated for the pairwise comparisons has five sheets for each of the linear model test ("Group","ctr_CD","ctr_UC","Gctr_both","UC_CD")
 # To ensure a more convenientthe viewing, filtering, and analyzing of the results, we have created a new sheet "ALL" in the "D2_Metabolites_Analysis_2.xlsx" excel file and combined the statstics and the p-values of all the five variables
 
 # In the "ALL" sheet: 1) You can visualize the ANOVA and pairwise comparisons analysis of the data at a Bonferroni significance of 0.05 
-                      2) We applied a stringent cutoff for filtering the five variables which resulted in the appearance of four patterns (Control different, CD different, UC different, and ladder)
+#                     2) We applied a stringent cutoff for filtering the five variables which resulted in the appearance of four patterns (Control different, CD different, UC different, and ladder)
 
---------------- To view the excel files : Kindly see results folder (Spearman correlation: file name: "Spearman_correlation .xls" ) --------------
-                                                                    (Pairwise comparisons : file name: "D2_Metabolites_Analysis_2.xlsx")         
+#--------------- To view the excel files : Kindly see results folder (Spearman correlation: file name: "Spearman_correlation .xls" ) --------------
+#                                                                    (Pairwise comparisons : file name: "D2_Metabolites_Analysis_2.xlsx")         
 
