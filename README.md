@@ -72,4 +72,8 @@ After applying a stringent cutoff for filtering the five variables, most of the 
 
 ![patterns](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/7689df54-706d-4f60-a745-9e74ff5348bb)
 
-**Here how the patterns look in our data**
+**Here are examples on how the patterns look in the data**
+
+![patterns_boxplot](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/3220b88d-d661-4848-a61a-0b4071bf3276)
+
+
