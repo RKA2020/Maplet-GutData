@@ -57,11 +57,7 @@ All the codes uded for the statistical analysis can be found in R_Codes folder u
 ![Screen Shot 2023-07-22 at 12 07 14 PM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/798741c5-d531-40ff-9e38-d6a9607a9cad)
 
 <p align="center">
-  <img width="300" height="300" src="https://user-images.githubusercontent.com/127655038/255532039-389cea6b-b91b-42c6-ae75-7ce61b08c8ab.png">
-</p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/127655038/255323084-4ba21d3b-d18d-48c0-947e-372064e0e7da.png">
+  <img width="400" height="400" src="https://user-images.githubusercontent.com/127655038/255532039-389cea6b-b91b-42c6-ae75-7ce61b08c8ab.png">
 </p>
 
 We also used R to create additional variables to compare between diagnosis (ANOVA and Pairwise comparisons) at a Bonferroni significance of 0.05. **A screenshot of the excel file generated is below:**
