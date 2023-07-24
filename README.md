@@ -75,7 +75,7 @@ After applying a stringent cutoff for filtering the five variables, most of the 
 **Below is a screenshot of a schematic we generated for the four observed patterns:** 
 
 <p align="center">
-  <img width="460" src="https://user-images.githubusercontent.com/127655038/255524806-7689df54-706d-4f60-a745-9e74ff5348bb.png">
+  <img width="660" src="https://user-images.githubusercontent.com/127655038/255524806-7689df54-706d-4f60-a745-9e74ff5348bb.png">
 </p>
 
 **Here are examples on how the patterns look in the data:**
