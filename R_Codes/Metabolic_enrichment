@@ -1,7 +1,7 @@
 # Here, we wanted to visualize the metabolic patterns observed in the data set
 # We generated boxplots for each of the metabolites and we performed an enrichment pathway analysis
 
---------------- Box plots --------------
+#--------------- Box plots --------------
 
 # I) we generated in R a PDF file with a box plot for each of the metabolites (We used (D1) summarized experiments)
 
@@ -165,10 +165,10 @@ abline(v=0)
 
 dev.off()
 
---------------- After running the codes : 1) A PDF file named: "boxplot_metabolites.pdf" will be generated  --------------
+#--------------- After running the codes : 1) A PDF file named: "boxplot_metabolites.pdf" will be generated  --------------
 
-                                          2) Three PDF files with the names ("Ctr_Vs_CD.pdf", "Ctr_Vs_UC.pdf", and "UC_Vs_CD.pdf") for the pathway enrichment analysis
+#                                          2) Three PDF files with the names ("Ctr_Vs_CD.pdf", "Ctr_Vs_UC.pdf", and "UC_Vs_CD.pdf") for the pathway enrichment analysis will be generated 
 
---------------- To view the PDF files : Kindly see results folder --------------
+#--------------- To view the PDF files : Kindly see results folder --------------
                                                                          
 
