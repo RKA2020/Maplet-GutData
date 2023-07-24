@@ -1,4 +1,4 @@
-# Here, we used "Maplet" in R to perform quality and statistical tests 
+# Here, we used "maplet" in R to perform quality and statistical tests 
 # We used the generated summarized experiments (D1) from the codes in the starting the metabotools file
 
 #--------------- PCA Graph ---------------
