@@ -59,3 +59,14 @@ All the codes uded for the statistical analysis can be found in R_Codes folder u
 <p align="center">
   <img src="https://user-images.githubusercontent.com/127655038/255323084-4ba21d3b-d18d-48c0-947e-372064e0e7da.png">
 </p>
+
+We also used R to create additional variables to compare between diagnosis (ANOVA and Pairwise comparisons) at a Bonferroni significance of 0.05. 
+![Screen Shot 2023-07-24 at 10 47 02 AM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/262320dd-ea61-4bcd-89f5-499255981b13)
+
+**This is a screenshot of the excel file generated:**
+
+After applying a stringent cutoff for filtering the five variables, Most of the metabolites across the three diagnosis appeared to follow one of the four patterns:(Control different, CD different, UC different, and ladder). 
+
+**Below is a screenshot of a schematic we generated for the four observed patterns:** 
+
+
