@@ -2,31 +2,31 @@
 
 Maplet is an R package for statistical data analysis specifically focusing on metabolomics datasets (Chetnik et al. "maplet: An extensible for modular and reproducible omics pipelines". Bioinformatics, 2021). 
 
-To get started with Maplet, you need to install the latest stable version of maplet using the following command:
+To get started, you need to install the latest stable version of maplet using the following command:
 
 ```
 devtools::install_github(repo="krumsieklab/maplet@v1.2.1", subdir="maplet")
 ```
 
-Additional information about the installation of maplet and examples on how to use maplet can be found on the github page of the package [here](https://github.com/krumsieklab/maplet). 
+Additional information about the installation of maplet and examples on how to use it can be found on the github page of the package [here](https://github.com/krumsieklab/maplet). 
 
 
 # **The Aim of this Project**
 
 The usage of multi-omics and bioinformatics approaches in the gut microbiome and metabolome field has gained more attention recently. 
 
-Here, we used "Maplet" and R to analyze a publicly available dataset from the paper "Gut microbiome structure and metabolic activity in inflammatory bowel disease" (Franzosa et al., 2019). [Link to publication](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/pdf/nihms-1510763.pdf). 
+Here, we used "maplet" and R to analyze a publicly available dataset from the paper "Gut microbiome structure and metabolic activity in inflammatory bowel disease" (Franzosa et al., 2019). [Link to publication](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/pdf/nihms-1510763.pdf). 
 
 We did that to: 
      
-      1- Check the feasibility of using Maplet in metabolome and gut microbiome data analysis 
+      1- Check the feasibility of using maplet in metabolome and gut microbiome data analysis 
       2- Check the reproducibility of the results generated from the article 
 
 # **Getting Started with the Project**
 
 To get started, we first downloaded and saved the supplementary dataset from the above paper. 
 
-You can find the available supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
+You can find the supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
 
 The supplementary files show the results of two metabolome and microbiome datasets for patients with CD, UC, or control (PRISM: 155 samples and validation cohort: 65 samples) - as a start we focused in this exercise on the PRISM samples. 
 
@@ -38,9 +38,9 @@ The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance
 
 # **Starting the Analysis**
 
-Here, we will mention briefly the steps we followed in this analysis. For a detailed explanation, please check the folders above.
+In this section, we will mention briefly the steps we followed in this analysis.
 
-To start, we first loaded the "Metabolome_data.xlsx" data and annotations in R. We then preprocessed the data based on the three diagnosis and performed:(quotient normalization, imputation, and missing values filtering) and last generated an html report of the pre-processing results. The html report gives a summary output of all the functions/ tests performed on the data.
+To start, we first loaded the "Metabolome_data.xlsx" data and annotations in R. We then preprocessed the data based on the three diagnosis and performed:(quotient normalization, imputation, and missing values filtering) and then generated an html report of the pre-processing results. The html report gives a summary output of all the functions/ tests performed on the data.
 
 **Below is a screenshot of the html report generated:** 
 
@@ -48,7 +48,7 @@ To start, we first loaded the "Metabolome_data.xlsx" data and annotations in R. 
 
 You can find the codes for the preprocessing part and the full html report in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above.
                  
-After preprocessing the data, we performed different statistical analysis (either using maplet codes or R codes). Such tests include: PCA, linear regression for the phenotypes, Chisquare, and others. 
+After preprocessing the data, we performed different statistical analysis (either using maplet or R codes). Such tests include: PCA, linear regression for the phenotypes, Chisquare, and others. 
 
 All the codes uded for the statistical analysis can be found in R_Codes folder under the files "Stat_with_maplet"and"Stat_with_R" above.
 
