@@ -35,7 +35,7 @@ for (i in ix){
 
 dev.off()
 
---------------- Pathway enrichment -------------
+#--------------- Pathway enrichment -------------
 
 # J) Using the pairwise comparison results (D2_Metabolites_Analysis_2.xlsx), we performed pathway enrichment of (control(ctr) vs CD, control(ctr) vs UC, and UC vs CD) and generate a PDF file for each enrichment
 
