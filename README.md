@@ -72,7 +72,7 @@ We also used R to create additional variables and compare between diagnosis (ANO
   <img width="600" height="400" src="https://user-images.githubusercontent.com/127655038/255521530-262320dd-ea61-4bcd-89f5-499255981b13.png">
 </p>
 
-After applying a stringent cutoff for filtering the five variables, most of the metabolites across the three diagnosis appeared to follow one of the four patterns:(ladder, CD different, Control different, and UC different). 
+After applying a stringent cutoff for filtering the five variables, most of the metabolites across the three diagnosis appeared to follow one of the four patterns:(ladder, CD different, Control different, and UC different). You can view the excel file with the results and defined patterns [here](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/D2_Metabolites_Analysis_2.xlsx)
 
 **Below is a screenshot of a schematic we generated for the four observed patterns:** 
 
