@@ -42,7 +42,7 @@ In this section, we will mention briefly the steps we followed in the analysis.
 
 To start, we first loaded the [Metabolome_data.xlsx](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Metabolites_Dataset/Metabolome_data.xlsx) data and annotations in R. We then preprocessed the data based on the three diagnosis and performed:(quotient normalization, imputation, and missing values filtering). 
 
-We then generated an html report of the pre-processing results which gave a summary output of all the functions/ tests performed on the data.[the html report]
+We then generated an html report of the pre-processing results which gave a summary output of all the functions/ tests performed on the data.
 
 **Below is a screenshot of the html report generated:** 
 
