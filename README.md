@@ -42,7 +42,7 @@ In this section, we will mention briefly the steps we followed in the analysis.
 
 To start, we first loaded the "Metabolome_data.xlsx" data and annotations in R. We then preprocessed the data based on the three diagnosis and performed:(quotient normalization, imputation, and missing values filtering). 
 
-We then generated an html report of the pre-processing results which gave a summary output of all the functions/ tests performed on the data.
+We then generated an html report of the pre-processing results which gave a summary output of all the functions/ tests performed on the data.[the html report]
 
 **Below is a screenshot of the html report generated:** 
 
@@ -50,7 +50,9 @@ We then generated an html report of the pre-processing results which gave a summ
 
 You can find the codes for the preprocessing section and the full html report in the R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" [here](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/STARTING_The_METABOTOOLS_PIPELINE.R).
                  
-After preprocessing the data, we performed different statistical analysis (either using maplet or R codes). Such tests include: PCA, [linear regression of the seven phenotypes](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/Steroids%20analysis.xlsx), [spearman correlation](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/Spearman_correlation%20.xls), and others. 
+After preprocessing the data, we performed different statistical analysis (either using maplet or R codes). Such tests include: [linear regression of the seven phenotypes](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/Steroids%20analysis.xlsx),
+[spearman correlation](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/Spearman_correlation%20.xls),
+[boxplots for all metabolites](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/boxplot_metabolites.pdf), and others. 
 
 All the codes uded for the statistical analysis can be found in R_Codes folder under the files [Stat_with_maplet](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/Stat_with_maplet.R) and [Stat_with_R](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/Stat_with_R.R).
 
@@ -65,6 +67,7 @@ All the codes uded for the statistical analysis can be found in R_Codes folder u
 <p align="center">
   <img src="https://user-images.githubusercontent.com/127655038/255533946-dc626780-0d85-48f7-b402-468ceda7046c.png">
 </p>
+
 
 We also used R to create additional variables and compare between diagnosis (ANOVA and Pairwise comparisons) at a Bonferroni significance of 0.05. **A screenshot of the excel file generated is below:**
 
@@ -86,4 +89,4 @@ After applying a stringent cutoff for filtering the five variables, most of the 
   <img width="660" src="https://user-images.githubusercontent.com/127655038/255528662-3220b88d-d661-4848-a61a-0b4071bf3276.png">
 </p>
 
- 
+**You can view all the results files [here](https://github.com/RKA2020/Maplet_Gut_Data/tree/main/Results)**:
