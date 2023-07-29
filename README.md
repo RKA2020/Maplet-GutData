@@ -34,7 +34,7 @@ We then used the supplementary files to create a new excel file with all the nec
 
 The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance, and features of the 155 PRISM samples in three separate sheets (Metabolome_metadata_PRISM, Metabolite_abundance_PRISM, and the Metabolite_features).
 
-**You can find the "Metabolome_data.xlsx" file under the "Metabolites_Dataset" folder above** 
+**You can find the "Metabolome_data.xlsx" file under the "Metabolites_Dataset" [here](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Metabolites_Dataset/Metabolome_data.xlsx)** 
 
 # **Starting the Analysis**
 
