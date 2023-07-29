@@ -24,7 +24,7 @@ We did that to:
 
 # **Getting Started with the Project**
 
-To get started, we first downloaded and saved the supplementary dataset from the above paper. 
+To get started, we first downloaded and saved the supplementary datasets.  
 
 You can find the supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/).
 
