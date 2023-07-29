@@ -50,7 +50,7 @@ We then generated an html report of the pre-processing results which gave a summ
 
 You can find the codes for the preprocessing section and the full html report in the R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" [here](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/STARTING_The_METABOTOOLS_PIPELINE.R).
                  
-After preprocessing the data, we performed different statistical analysis (either using maplet or R codes). Such tests include: PCA, linear regression for the phenotypes, Chisquare, and others. 
+After preprocessing the data, we performed different statistical analysis (either using maplet or R codes). Such tests include: PCA, [linear regression of the seven phenotypes](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/Steroids%20analysis.xlsx), [spearman correlation](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/Spearman_correlation%20.xls), and others. 
 
 All the codes uded for the statistical analysis can be found in R_Codes folder under the files [Stat_with_maplet](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/Stat_with_maplet.R) and [Stat_with_R](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/Stat_with_R.R).
 
