@@ -48,11 +48,11 @@ We then generated an html report of the pre-processing results which gave a summ
 
 ![Screen Shot 2023-07-22 at 11 45 35 AM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/fbc58eb7-2ae9-4410-ac0b-a020e8c4ea9f)
 
-You can find the codes for the preprocessing part and the full html report in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" above.
+You can find the codes for the preprocessing part and the full html report in R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" [here](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/STARTING_The_METABOTOOLS_PIPELINE.R).
                  
 After preprocessing the data, we performed different statistical analysis (either using maplet or R codes). Such tests include: PCA, linear regression for the phenotypes, Chisquare, and others. 
 
-All the codes uded for the statistical analysis can be found in R_Codes folder under the files "Stat_with_maplet"and"Stat_with_R" above.
+All the codes uded for the statistical analysis can be found in R_Codes folder under the files [Stat_with_maplet](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/Stat_with_maplet.R) and [Stat_with_R](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/Stat_with_R.R).
 
 **Below are screenshots of some of the results generated:** 
 
@@ -66,7 +66,7 @@ All the codes uded for the statistical analysis can be found in R_Codes folder u
   <img src="https://user-images.githubusercontent.com/127655038/255533946-dc626780-0d85-48f7-b402-468ceda7046c.png">
 </p>
 
-We also used R to create additional variables to compare between diagnosis (ANOVA and Pairwise comparisons) at a Bonferroni significance of 0.05. **A screenshot of the excel file generated is below:**
+We also used R to create additional variables and compare between diagnosis (ANOVA and Pairwise comparisons) at a Bonferroni significance of 0.05. **A screenshot of the excel file generated is below:**
 
 <p align="center">
   <img width="600" height="400" src="https://user-images.githubusercontent.com/127655038/255521530-262320dd-ea61-4bcd-89f5-499255981b13.png">
