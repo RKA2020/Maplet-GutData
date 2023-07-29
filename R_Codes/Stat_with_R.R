@@ -1,7 +1,7 @@
 # Using the same (D1) summarized experiments, we performed additional statistical tests outside of maplet 
 # Statistical tests: chisquare, Spearman correlation, pairwise comparisons
 
---------------- Chisquare ---------------
+#--------------- Chisquare ---------------
 
 # F) compare Diagnosis vs. all parameters (chisquare)
 
@@ -35,7 +35,7 @@ chisq.test(D1$Diagnosis,D1$Steroids, correct = TRUE,
            p = rep(1/length(x), length(x)), rescale.p = FALSE,
            simulate.p.value = FALSE, B = 2000)
 
---------------- Spearman correlation ---------------
+#--------------- Spearman correlation ---------------
 
 # G) Spearman correlation
 
@@ -43,7 +43,7 @@ D_correlationMt= cor(t(assay(D1)), t(assay(D1)),method="spearman")
 colnames(D_correlationMt)[1]=paste("\t",colnames(D_correlationMt)[1],sep="")
 write.table(D_correlationMt,file="ss_correlationMt.tsv",sep="\t",row.names=TRUE,quote = FALSE)
 
---------------- pairwise comparisons ---------------
+#--------------- pairwise comparisons ---------------
 
 # H) Creating additional variables to compare between diagnosis 
 
