@@ -89,4 +89,4 @@ After applying a stringent cutoff for filtering the five variables, most of the 
   <img width="660" src="https://user-images.githubusercontent.com/127655038/255528662-3220b88d-d661-4848-a61a-0b4071bf3276.png">
 </p>
 
-**You can view all the results files [here](https://github.com/RKA2020/Maplet_Gut_Data/tree/main/Results)**:
+**You can view all the results files [here](https://github.com/RKA2020/Maplet_Gut_Data/tree/main/Results)**
