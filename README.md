@@ -1,4 +1,4 @@
-# **Maplet in Microbiome Analysis**
+# **Maplet in IBD Analysis**
 
 Maplet is an R package for statistical data analysis specifically focusing on metabolomics datasets [Chetnik et al. "maplet: An extensible for modular and reproducible omics pipelines". Bioinformatics, 2021)](https://pubmed.ncbi.nlm.nih.gov/34694386/)
 
