@@ -108,4 +108,4 @@ Using maplet and R, we were able to regenerate similar results as the paper:
 
 - The appearance of complex four patterns in our analysis (ladder, CD different, Control different, and UC different) **maybe** linked to  the metabolites expression in the three group?
 
-Overall, we were able to reproduce similar results as the original paper for the PRISM samples using maplet and R using the publicly available datasets. 
+Overall, we were able to reproduce similar results as the original paper for the PRISM samples using maplet and R with the publicly available datasets. 
