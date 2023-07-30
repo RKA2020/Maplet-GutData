@@ -48,7 +48,7 @@ We then generated an html report of the pre-processing results which gave a summ
 
 ![Screen Shot 2023-07-22 at 11 45 35 AM](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/fbc58eb7-2ae9-4410-ac0b-a020e8c4ea9f)
 
-You can find the codes for the preprocessing section and the full html report in the R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" [here](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/STARTING_The_METABOTOOLS_PIPELINE.R).
+You can find the codes for the preprocessing section in the R_Codes folder under the file "STARTING_The_METABOTOOLS_PIPELINE" [here](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/R_Codes/STARTING_The_METABOTOOLS_PIPELINE.R).
                  
 After preprocessing the data, we performed different statistical analysis (either using maplet or R codes). Such tests include: [linear regression of the seven phenotypes](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/Steroids%20analysis.xlsx),
 [spearman correlation](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Results/Spearman_correlation%20.xls),
