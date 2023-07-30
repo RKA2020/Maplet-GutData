@@ -90,3 +90,17 @@ After applying a stringent cutoff for filtering the five variables, most of the 
 </p>
 
 **You can view all the results files [here](https://github.com/RKA2020/Maplet_Gut_Data/tree/main/Results)**
+
+# **Discussion of the results**
+
+Using maplet and R, we were able to regenerate similar results as the paper: 
+
+- We started with a total number of 8,848 clustered features (original paper: 8,869)
+- After pre-processing we had a total number of 3,829 metabolite features which was linked to putative identifiers (original paper: 3,829)
+- PCA graphs of the PRISM metabolites abundance showed similar separation across the three diagnosis as the original paper
+- Chemicals and chemical classes that were differentially abundant in IBD: **Enrichments**: (sphingolipids and bile acids)
+                                                                           **Depletions**: (triacylglycerols and tetrapyrroles)
+- The broader classes analysis of each metabolites showed similar expression across the three diagnosis as the original paper:
+  
+  ![image](https://github.com/RKA2020/Maplet_Gut_Data/assets/127655038/11a756a1-a8c8-47af-b8fc-dddd1a410fd8)
+
