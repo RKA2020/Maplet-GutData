@@ -15,7 +15,7 @@ Additional information about the installation of maplet and examples on how to u
 
 The usage of multi-omics and bioinformatics approaches in the gut microbiome and metabolome field has gained more attention recently. 
 
-Here, we used "maplet" and R to analyze a publicly available dataset from the paper "Gut microbiome structure and metabolic activity in inflammatory bowel disease" (Franzosa et al., 2019). [Link to publication](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/pdf/nihms-1510763.pdf). 
+Here, we used "maplet" and R to analyze a publicly available dataset from the paper ["Gut microbiome structure and metabolic activity in inflammatory bowel disease" (Franzosa et al., 2019)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6342642/pdf/nihms-1510763.pdf). 
 
 We did that to: 
      
