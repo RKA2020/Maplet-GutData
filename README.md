@@ -30,11 +30,11 @@ You can find the supplementary data [here](https://www.ncbi.nlm.nih.gov/pmc/arti
 
 The supplementary files show the results of two metabolome and microbiome datasets for patients with CD, UC, or control (PRISM: 155 samples and validation cohort: 65 samples) - as a start we focused in this exercise on the PRISM samples. 
 
-We then used the supplementary files to create a new excel file with all the necessary data we need for our analysis under the name: **"Metabolome_data.xlsx"**. 
+We then used the supplementary files to create a new excel file with all the necessary data we need for our analysis under the name:
+**["Metabolome_data.xlsx"](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Metabolites_Dataset/Metabolome_data.xlsx)**. 
 
 The new excel file "Metabolome_data.xlsx" has the metadata, metabolite abundance, and features of the 155 PRISM samples in three separate sheets (Metabolome_metadata_PRISM, Metabolite_abundance_PRISM, and the Metabolite_features).
 
-**You can find the "Metabolome_data.xlsx" file under the "Metabolites_Dataset" [here](https://github.com/RKA2020/Maplet_Gut_Data/blob/main/Metabolites_Dataset/Metabolome_data.xlsx).** 
 
 # **Starting the Analysis**
 
