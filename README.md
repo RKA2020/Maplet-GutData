@@ -19,8 +19,8 @@ Here, we used "maplet" and R to analyze a publicly available dataset from the pa
 
 We did that to: 
      
-      1- Check the feasibility of using maplet in metabolome and gut microbiome data analysis 
-      2- Check the reproducibility of the results generated from the article 
+      - Check the feasibility of using maplet in metabolome and gut microbiome data analysis 
+      - Check the reproducibility of the results generated from the article 
 
 # **Getting Started with the Project**
 
