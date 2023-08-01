@@ -10,7 +10,7 @@ purrr::zap()
 # You can find the excel file we used for this exercise in Metabolites_Dataset folder under the name ("Metabolome_data.xlsx") 
 # Note: once you download and save the excel file into your directory, kindly adjust the file path code in line 13 accordingly
 
-file_data_metabolome <- system.file("extdata", "example_data/Metabolome_data.xlsx", package = "maplet")
+file_data_metabolome <- system.file("extdata", "../Metabolites_Dataset/Metabolome_data.xlsx", package = "maplet")
 print (file_data_metabolome)
 
 # B) Starting the pipeline by loading the data and the annotations: 
@@ -92,7 +92,7 @@ D1 <- D1 %>%
   mt_plots_missingness(feat_max=0.5) %>%
   {.}
 
-D1 <-  D1 %>% mt_reporting_html(file = "Pre_processing.html",
+D1 <-  D1 %>% mt_reporting_html(file = "../Results/Pre_processing.html",
                          title = "PRISM samples")
 
 #--------------- After running the codes : 1) A large summarized experiments with 3829 elements will be generated ---------------

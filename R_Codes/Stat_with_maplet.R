@@ -14,7 +14,7 @@ D1 <- D1 %>%
   mt_plots_pca(scale_data = T, title = "Scaled PCA - Diagnosis", color= Diagnosis, exp_var_plot=T, size=2.5, ggadd= theme(panel.background = element_rect(fill = "white", colour = "grey50"))) %>%
   {.}
 
-D1 <- D1 %>% mt_reporting_html(file = "PCA.html", title = "IBD - PCA")
+D1 <- D1 %>% mt_reporting_html(file = "../Results/PCA.html", title = "IBD - PCA")
 
 
 #--------------- LINEAR REGRESSION of the seven phenotypes (Diagnosis, AGE, Fecal.Calprotectin,Antibiotic,Immunosuppressant,Mesalamine, and Steroids) ---------------
