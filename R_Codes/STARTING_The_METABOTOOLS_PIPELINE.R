@@ -10,7 +10,7 @@ purrr::zap()
 # You can find the excel file we used for this exercise in Metabolites_Dataset folder under the name ("Metabolome_data.xlsx") 
 # Note: once you download and save the excel file into your directory, kindly adjust the file path code in line 13 accordingly
 
-file_data_metabolome <- system.file("extdata", "../Metabolites_Dataset/Metabolome_data.xlsx", package = "maplet")
+file_data_metabolome <- ("../Metabolites_Dataset/Metabolome_data.xlsx")
 print (file_data_metabolome)
 
 # B) Starting the pipeline by loading the data and the annotations: 
