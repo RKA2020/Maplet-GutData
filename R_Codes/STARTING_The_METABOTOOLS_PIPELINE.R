@@ -98,6 +98,3 @@ D1 <-  D1 %>% mt_reporting_html(file = "../Results/Pre_processing.html",
 #--------------- After running the codes : 1) A large summarized experiments with 3829 elements will be generated ---------------
 #                                          2) An html report will be generated 
 
-#--------------- You can view the generated html report of the pre-processing results using this link (file:///Users/DoctorR/Metabolome_IBDdataset_Maplet/Pre_processing.html) -------------
-
-
